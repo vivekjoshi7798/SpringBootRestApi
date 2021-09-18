@@ -36,7 +36,7 @@ public class ProjectController {
 	@RequestMapping("Get_Employee/{EmployeeId}/projects")
 	public List<Project> getAllEmployeeById(@PathVariable("EmployeeId") int Emp_ID)
 	{ 
-		System.out.println(Emp_ID);
+		System.out.println("Employee _ID"+Emp_ID);
 		return mprojService.getProjectForEmployee(Emp_ID);
 		
 	}
